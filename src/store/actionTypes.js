@@ -1,0 +1,1 @@
+export const HANDLE_TAB_HIDDEN = "handleTabHidden" // tab标签
