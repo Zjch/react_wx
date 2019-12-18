@@ -5,9 +5,9 @@ import './TabBar.less'
 import store from "../../store";
 import { handleTabHiddenAction } from "../../store/actionCreators";
 
-import Home from "../../pages/Home/Home"; // 首页
-import LifeRang from "../../pages/LifeRang/LifeRang"; // 生活圈
-import My from "../../pages/My/My"; // 我的
+// import Home from "../../pages/Home/Home"; // 首页
+// import LifeRang from "../../pages/LifeRang/LifeRang"; // 生活圈
+// import My from "../../pages/My/My"; // 我的
 
 class TabBars extends Component{
     constructor(props){
@@ -40,7 +40,7 @@ class TabBars extends Component{
     render(){
         const pathname = this.props.location.pathname
         return (
-            <div style={{position: 'fixed', height: '100%', width: '100%', top: 0}}>
+            <div style={{position: 'fixed', height: '50px', width: '100%', bottom: 0, zIndex: 9}}>
                 <TabBar
                     unselectedTintColor="#949494"
                     tintColor="#33A3F4"
@@ -64,7 +64,7 @@ class TabBars extends Component{
                             this.props.history.push('/')
                         }}
                     >
-                        { pathname === '/' ? <Home {...this.props}/> : null }
+                        {/* { pathname === '/' ? <Home {...this.props}/> : null } */}
                     </TabBar.Item>
                     <TabBar.Item
                         title="生活圈"
@@ -81,7 +81,7 @@ class TabBars extends Component{
                             this.props.history.push('/liferang')
                         }}
                     >
-                        { pathname === '/liferang' ? <LifeRang/> : null }
+                        {/* { pathname === '/liferang' ? <LifeRang/> : null } */}
                     </TabBar.Item>
                     <TabBar.Item
                         title="我的"
@@ -98,7 +98,7 @@ class TabBars extends Component{
                             this.props.history.push('/my')
                         }}
                     >
-                        { pathname === '/my' ? <My/> : null }
+                        {/* { pathname === '/my' ? <My/> : null } */}
                     </TabBar.Item>
                 </TabBar>
             </div>

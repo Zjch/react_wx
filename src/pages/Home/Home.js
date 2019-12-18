@@ -8,7 +8,7 @@ class Home extends Component{
     constructor(props){
         super(props)
         this.state = {
-
+            
         }
     }
 
@@ -19,16 +19,9 @@ class Home extends Component{
         });
     }
 
-    
-
-    // 在组件从 DOM 中移除之前立刻被调用。
-    componentWillUnmount(){
-        // console.log(123)
-    }
-
     render(){
         return (
-            <div>
+            <div className="page">
                 {/* banner */}
                 <div className="swiper-container banner">
                     <div className="swiper-wrapper">
