@@ -4,8 +4,6 @@ import router from "../../router";
 import TabBar from "./TabBar"; // 底部菜单
 
 class TabRouter extends Component {
-    
-
     render() {
         return ( 
             <Router>
@@ -17,7 +15,6 @@ class TabRouter extends Component {
                                 key={i} 
                                 exact={route.exact} 
                                 path={route.path} 
-                                // component={route.component}
                                 render={props => (
                                     <route.component {...props} routes={route.routes} />
                                 )}

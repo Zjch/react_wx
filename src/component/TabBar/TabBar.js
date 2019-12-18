@@ -5,10 +5,6 @@ import './TabBar.less'
 import store from "../../store";
 import { handleTabHiddenAction } from "../../store/actionCreators";
 
-// import Home from "../../pages/Home/Home"; // 首页
-// import LifeRang from "../../pages/LifeRang/LifeRang"; // 生活圈
-// import My from "../../pages/My/My"; // 我的
-
 class TabBars extends Component{
     constructor(props){
         super(props)
