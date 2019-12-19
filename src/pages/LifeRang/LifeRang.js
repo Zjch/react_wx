@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './lifeRang.less'
 
 class LifeRang extends Component{
     constructor(props){
@@ -11,7 +12,7 @@ class LifeRang extends Component{
     render(){
         return (
             <div>
-                我是生活圈
+                <p className="developing">正在开发中...</p>
             </div>
         )
     }

@@ -31,6 +31,10 @@ class My extends Component{
                         <p>成为商家</p>
                         <p>></p>
                     </div>
+                    <div className="handle_item" onClick={this.toCreateShop}>
+                        <p>我的店铺</p>
+                        <p>></p>
+                    </div>
                     <div className="handle_item">
                         <p>关于我们</p>
                         <p>></p>

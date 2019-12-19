@@ -15,6 +15,7 @@ class ShopDetail extends Component {
             speed: 400,
             spaceBetween: 100
         });
+        window.scrollTo(0,0)
     }
     render() { 
         return ( 
